@@ -1,0 +1,56 @@
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/manege-students">Manege Student</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Show Student</li>
+            </ol>
+        </nav>
+    </div>
+
+<div style="padding: 50px;">
+
+<table method="get" action="/show-students" class="table table-striped">
+
+    <tr>
+      <th scope="col">Student ID</th>
+      <th scope="col">{{this.student.student_id}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Frist Name</th>
+      <th scope="col">{{this.student.first_name}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Last Name</th>
+      <th scope="col">{{this.student.last_name}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Email</th>
+      <th scope="col">{{this.student.email}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Date Of birth</th>
+      <th scope="col">{{this.student.date_of_birth}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Address</th>
+      <th scope="col">{{this.student.address}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Create at</th>
+      <th scope="col">{{this.student.created_at}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Update at</th>
+      <th scope="col">{{this.student.updated_at}}</th>
+    </tr>
+
+</table>
+
+</div>

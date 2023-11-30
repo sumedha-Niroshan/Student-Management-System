@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/manege-students">Manege Student</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New Student</li>
+            </ol>
+        </nav>
+    </div>
+
+
+<div style="padding-right: 100px; padding-left:70px;" >
+<form action="/create-students" method="post">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Student ID</label>
+    <div class="col-sm-10">
+      <input type="number" readonly class="form-control-plaintext" id="student_id" >
+    </div>
+  </div> &nbsp; &nbsp; 
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Frist Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="first_name" id="first_name">
+    </div>
+  </div> &nbsp; &nbsp; 
+
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Last  Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="last_name" id="last_name">
+    </div>
+  </div> &nbsp; &nbsp; 
+
+    <div class="form-group row">
+        <label  class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" name="email" id="email">
+        </div>
+  </div> &nbsp; &nbsp; 
+
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Date of Birth</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" name="date_of_birth" id="b_day">
+    </div>
+  </div> &nbsp; &nbsp; 
+
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="address" id="address">
+    </div>
+  </div> &nbsp; &nbsp; 
+
+  
+   <div class="form-group row">
+    <button type="submit" class="btn btn-primary">Create Student</button>
+  </div>
+
+  
+  
+
+
+   
+</form>
+</div>
+
+</body>
+</html>

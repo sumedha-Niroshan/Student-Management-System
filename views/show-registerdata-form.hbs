@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Select the course</li>
+            </ol>
+        </nav>
+    </div>
+
+    <hr>
+
+    
+<div style="padding: 50px;">
+<form action="/show-registerd-students" method="POST">
+
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label">Select Program</label>
+    <div class="col-6"><select class="form-select" name="programId" aria-label="Default select example">
+    <option selected>Open this select program</option>
+    {{#each rows}}
+    <option value="{{this.program_id}}">{{this.program_name}}</option>
+    {{/each}}
+    </select>
+     </div>
+     <div class="col-4"> <input class="btn btn-primary" type="submit" value="Show students"></div>
+    
+   
+</div>
+
+
+
+
+
+
+
+</form>
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Manege programs</li>
+            </ol>
+        </nav>
+    </div>
+    
+<div style="padding: 10px;">
+  <div> <img src="https://cdn-icons-png.flaticon.com/512/1159/1159711.png" width="30px" height="30px"><a  href="/new-programs" class="btn btn-info">Add Programes</a></div>              
+<table class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th>Programe ID</th>
+            <th>Programe  Name</th> 
+            <th>Options</th>          
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each rows}}
+        <tr>
+            <td>{{this.program_id}}</td>
+            <td>{{this.program_name}}</td>
+            <td>
+                <a href="/show-programs/{{this.program_id}}" class="btn btn-info">Show Data</a>&nbsp;
+                <a href="/update-programs/{{this.program_id}}" class="btn btn-success">Update</a>&nbsp;
+                <a href="/delete-programs/{{this.program_id}}" class="btn btn-danger">Delete</a>
+                
+            </td>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

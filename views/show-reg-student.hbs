@@ -1,0 +1,39 @@
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/register-data">Select the course</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Registered Student</li>
+            </ol>
+        </nav>
+    </div>
+
+
+
+
+<div style="padding: 40px;">
+             
+<table method="get" class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Frist  Name</th>
+            <th>Last Name</th>
+            <th>Email</th> 
+            <th>Address</th>
+       
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each rows}}
+        <tr>
+            <td>{{this.student_id}}</td>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.address}}</td>         
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

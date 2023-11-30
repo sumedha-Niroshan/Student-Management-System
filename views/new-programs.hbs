@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/manege-programs">Manege Programs</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New Programs</li>
+            </ol>
+        </nav>
+    </div>
+
+    <hr>
+
+<div style="padding-right: 100px; padding-left:50px;" >
+<form action="/create-programs" method="post">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Program ID</label>
+    <div class="col-sm-10">
+      <input type="number" readonly class="form-control-plaintext" id="program_id" >
+    </div>
+  </div> &nbsp; &nbsp; 
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Program Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="program_name" id="program_name">
+    </div>
+  </div>&nbsp; &nbsp; 
+
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Discription</label>
+    <div class="col-sm-10">
+      <input type="textarea" class="form-control" name="description" id="description">
+    </div>
+  </div>&nbsp; &nbsp; 
+
+   
+  
+   <div class="form-group row">
+    <button type="submit" class="btn btn-primary">Create Program</button>
+  </div>
+
+  
+  
+
+
+   
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/manege-programs">Manege Program</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Show programs</li>
+            </ol>
+        </nav>
+    </div>
+
+<div style="padding: 50px;">
+
+<table method="get" action="/show-programs" class="table table-striped">
+
+    <tr>
+      <th scope="col">Program ID</th>
+      <th scope="col">{{this.program.program_id}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Program Name</th>
+      <th scope="col">{{this.program.program_name}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Description </th>
+      <th scope="col">{{this.program.description}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Create at</th>
+      <th scope="col">{{this.program.created_at}}</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Update at</th>
+      <th scope="col">{{this.program.updated_at}}</th>
+    </tr>
+
+</table>
+
+</div>

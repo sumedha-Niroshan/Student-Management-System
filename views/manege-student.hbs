@@ -1,0 +1,40 @@
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Manege Student</li>
+            </ol>
+        </nav>
+    </div>
+<div style="padding: 10px;">
+  <div> <img src="https://media.istockphoto.com/id/1280182011/vector/add-new-user-account-or-add-new-friend-icon-in-line-style-person-avatar-symbol-for-perfect.jpg?s=612x612&w=0&k=20&c=kxQVcBN5Hm2jvUmWFcHAA7zenzc0WcJRyBVv4j-o_cU=" width="30px" height="30px"><a  href="/new-students" class="btn btn-info">New Student</a></div>              
+<table class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Frist  Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Options</th>           
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each rows}}
+        <tr>
+            <td>{{this.student_id}}</td>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+            <td>{{this.email}}</td>
+            <td>
+                <a href="/show-students/{{this.student_id}}" class="btn btn-info">Show Data</a>&nbsp;
+                <a href="/update-students/{{this.student_id}}" class="btn btn-success">Update</a>&nbsp;
+                <a href="/delete-students/{{this.student_id}}" class="btn btn-danger">Delete</a>
+                
+            </td>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

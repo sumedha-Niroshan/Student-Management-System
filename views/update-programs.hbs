@@ -1,0 +1,44 @@
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/manege-programs">Manege Program</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Update programs</li>
+            </ol>
+        </nav>
+    </div>
+
+<div style="padding: 50px;">
+<form action="/modify-programs" method="post">
+
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Program ID</label>
+    <div class="col-sm-6">
+      <input type="number"  class="form-control-plaintext" readonly name="program_id" id="staticEmail" value="{{this.program.program_id}}">
+    </div>
+  </div> &nbsp;&nbsp;
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Program Name</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" name="program_name" value="{{this.program.program_name}}">
+    </div>
+  </div>  &nbsp;&nbsp;
+   <div class="form-group row">
+    <label  class="col-sm-2 col-form-label">Description</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" name="description" value="{{this.program.description}}">
+    </div>
+  </div>  &nbsp;&nbsp;
+
+
+   <div class="form-group row">
+    
+    <button type="submit" class="btn btn-primary">Update Program</button>
+
+  </div>
+
+
+
+   
+</form>
+
+</div>
